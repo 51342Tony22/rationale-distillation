@@ -1,0 +1,60 @@
+{
+  "source": {
+    "train": 6973,
+    "dev": 500,
+    "test": 1319
+  },
+  "train_test_question_overlap": 0,
+  "train_dev_question_overlap": 0,
+  "dev_test_question_overlap": 0,
+  "variants": {
+    "answer_only": {
+      "rows": 15,
+      "unique_questions": 5,
+      "approx_characters": 5121,
+      "duplicate_completions": 10
+    },
+    "single_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "approx_characters": 10551,
+      "duplicate_completions": 10
+    },
+    "low_diversity_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "approx_characters": 9344,
+      "duplicate_completions": 0
+    },
+    "multi_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "approx_characters": 9690,
+      "duplicate_completions": 0
+    },
+    "diverse_multi_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "approx_characters": 9792,
+      "duplicate_completions": 0
+    },
+    "compatible_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "approx_characters": 9911,
+      "duplicate_completions": 0
+    }
+  },
+  "same_question_set_across_variants": true,
+  "same_row_count_across_variants": true,
+  "unknown_or_mismatched_variant_rows": {
+    "answer_only": 0,
+    "single_rationale": 0,
+    "low_diversity_rationale": 0,
+    "multi_rationale": 0,
+    "diverse_multi_rationale": 0,
+    "compatible_rationale": 0
+  },
+  "status": "PASS",
+  "failures": []
+}

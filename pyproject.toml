@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fyp-reasoning-distillation"
+version = "0.1.0"
+description = "Controlled rationale-supervision experiments for compact language models"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy>=2.0,<3",
+  "openai>=1.59,<4",
+  "pylatexenc>=2.10,<3",
+  "python-dotenv>=1.0,<2",
+  "pyyaml>=6.0,<7",
+  "scikit-learn>=1.5,<2",
+  "sympy>=1.13,<2",
+]
+
+[project.optional-dependencies]
+train = [
+  "accelerate>=1.2,<2",
+  "peft>=0.14,<1",
+  "safetensors>=0.5,<1",
+  "torch>=2.5,<3",
+  "transformers>=4.51,<5",
+]
+dev = ["pytest>=8.3,<10", "ruff>=0.9,<1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

@@ -1,0 +1,29 @@
+{
+  "comparisons": {
+    "single_rationale_minus_answer_only": {
+      "difference": 0.42,
+      "ci_low": 0.3433333333333334,
+      "ci_high": 0.49666666666666665,
+      "n": 100
+    },
+    "multi_rationale_minus_single_rationale": {
+      "difference": 0.016666666666666666,
+      "ci_low": -0.05333333333333333,
+      "ci_high": 0.08666666666666668,
+      "n": 100
+    },
+    "diverse_multi_rationale_minus_multi_rationale": {
+      "difference": 0.03333333333333333,
+      "ci_low": -0.03333333333333333,
+      "ci_high": 0.1,
+      "n": 100
+    },
+    "diverse_multi_rationale_minus_answer_only": {
+      "difference": 0.4699999999999999,
+      "ci_low": 0.4,
+      "ci_high": 0.5433333333333333,
+      "n": 100
+    }
+  },
+  "gap_closure": {}
+}

@@ -1,0 +1,13 @@
+{
+  "variant": "random_expansion",
+  "seed": 7,
+  "split": "dev",
+  "backend": "mlx-lm",
+  "base_model": "models/Qwen3-8B-Base-4bit",
+  "n": 70,
+  "accuracy": 0.24285714285714285,
+  "metric": "math_equivalence",
+  "invalid_answer_rate": 0.12857142857142856,
+  "mean_rationale_words": 355.0571428571429,
+  "exact_match": 0.24285714285714285
+}

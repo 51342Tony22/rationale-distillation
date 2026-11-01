@@ -1,0 +1,13 @@
+{
+  "variant": "base_student",
+  "seed": 7,
+  "split": "dev",
+  "backend": "mlx-lm",
+  "base_model": "models/Qwen3-8B-Base-4bit",
+  "n": 70,
+  "accuracy": 0.1,
+  "metric": "math_equivalence",
+  "invalid_answer_rate": 0.6285714285714286,
+  "mean_rationale_words": 11.82857142857143,
+  "exact_match": 0.1
+}

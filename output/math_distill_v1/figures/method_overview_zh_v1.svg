@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="0" y="0" width="2200" height="228" rx="0" fill="#F4F7FB" stroke="none" stroke-width="2"/>
+<text x="64.00" y="70.40" fill="#2465CA" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">轻量数学推理蒸馏 · 方法总览</text>
+<text x="64.00" y="156.56" fill="#15283C" font-size="62" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">用学生的困难与注意力，指导教师补哪里</text>
+<text x="64.00" y="209.52" fill="#52687A" font-size="29" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">训练时补充关键关系；推理时由 1.5B 学生独立解题。</text>
+<text x="66.00" y="304.28" fill="#15283C" font-size="31" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">01   离线诊断与训练</text>
+<rect x="1610" y="264" width="525" height="48" rx="12" fill="#FFF2DF" stroke="none" stroke-width="2"/>
+<text x="1628.00" y="297.00" fill="#AD6619" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">方法设计 · 效果待验证</text>
+<rect x="64" y="340" width="390" height="421" rx="22" fill="#EEF4FF" stroke="#D5DFEA" stroke-width="2"/>
+<rect x="88" y="365" width="53" height="53" rx="14" fill="#2465CA" stroke="none" stroke-width="2"/>
+<text x="105.75" y="402.40" fill="white" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">1</text>
+<text x="88.00" y="476.68" fill="#2465CA" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">准备正确解答</text>
+<text x="88.00" y="525.88" fill="#2465CA" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">题目 + 教师原始 CoT</text>
+<text x="88.00" y="580.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">逐条核查数学与完整性</text>
+<text x="88.00" y="623.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">保留题目和答案来源</text>
+<text x="88.00" y="666.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">固定训练题集合</text>
+<text x="88.00" y="734.12" fill="#2465CA" font-size="24" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">数据准备</text>
+<polyline points="459,548 479,548" fill="none" stroke="#52687A" stroke-width="3"/>
+<polygon points="479,548 467.5914266954251,554.2325320018547 467.5914266954251,541.7674679981453" fill="#52687A"/>
+<rect x="484" y="340" width="390" height="421" rx="22" fill="#EEF4FF" stroke="#D5DFEA" stroke-width="2"/>
+<rect x="508" y="365" width="53" height="53" rx="14" fill="#2465CA" stroke="none" stroke-width="2"/>
+<text x="525.75" y="402.40" fill="white" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">2</text>
+<text x="508.00" y="476.68" fill="#2465CA" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">找困难步骤</text>
+<text x="508.00" y="525.88" fill="#2465CA" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">学生预测难度 · NLL</text>
+<text x="508.00" y="580.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">让学生读正确解答</text>
+<text x="508.00" y="623.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">聚合每个步骤的难度</text>
+<text x="508.00" y="666.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">各题使用自己的步骤边界</text>
+<text x="508.00" y="734.12" fill="#2465CA" font-size="24" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">定位候选</text>
+<polyline points="879,548 899,548" fill="none" stroke="#52687A" stroke-width="3"/>
+<polygon points="899,548 887.5914266954252,554.2325320018547 887.5914266954252,541.7674679981453" fill="#52687A"/>
+<rect x="904" y="340" width="390" height="421" rx="22" fill="#E9F7F4" stroke="#D5DFEA" stroke-width="2"/>
+<rect x="928" y="365" width="53" height="53" rx="14" fill="#087F80" stroke="none" stroke-width="2"/>
+<text x="945.75" y="402.40" fill="white" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">3</text>
+<text x="928.00" y="476.68" fill="#087F80" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">找相关前提</text>
+<text x="928.00" y="525.88" fill="#087F80" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">学生 attention</text>
+<text x="928.00" y="580.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">从预测位置回看前文</text>
+<text x="928.00" y="623.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">寻找可能相关的条件</text>
+<text x="928.00" y="666.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">候选关联需要语义核查</text>
+<text x="928.00" y="734.12" fill="#087F80" font-size="24" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">读取功能已验证</text>
+<polyline points="1299,548 1319,548" fill="none" stroke="#52687A" stroke-width="3"/>
+<polygon points="1319,548 1307.591426695425,554.2325320018547 1307.591426695425,541.7674679981453" fill="#52687A"/>
+<rect x="1324" y="340" width="390" height="421" rx="22" fill="#FFF4E4" stroke="#D5DFEA" stroke-width="2"/>
+<rect x="1348" y="365" width="53" height="53" rx="14" fill="#AD6619" stroke="none" stroke-width="2"/>
+<text x="1365.75" y="402.40" fill="white" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">4</text>
+<text x="1348.00" y="476.68" fill="#AD6619" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">补充局部解释</text>
+<text x="1348.00" y="525.88" fill="#AD6619" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">教师说明“为何能这样推”</text>
+<text x="1348.00" y="580.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">联系前提、规则与当前步骤</text>
+<text x="1348.00" y="623.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">将解释放到困难步骤之前</text>
+<text x="1348.00" y="666.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">核查数学、长度与答案泄漏</text>
+<text x="1348.00" y="734.12" fill="#AD6619" font-size="24" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">局部改写待实施</text>
+<polyline points="1719,548 1739,548" fill="none" stroke="#52687A" stroke-width="3"/>
+<polygon points="1739,548 1727.591426695425,554.2325320018547 1727.591426695425,541.7674679981453" fill="#52687A"/>
+<rect x="1744" y="340" width="390" height="421" rx="22" fill="#FFF4E4" stroke="#D5DFEA" stroke-width="2"/>
+<rect x="1768" y="365" width="53" height="53" rx="14" fill="#AD6619" stroke="none" stroke-width="2"/>
+<text x="1785.75" y="402.40" fill="white" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">5</text>
+<text x="1768.00" y="476.68" fill="#AD6619" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">训练轻量学生</text>
+<text x="1768.00" y="525.88" fill="#AD6619" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">改写 CoT + 答案监督</text>
+<text x="1768.00" y="580.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">与基础蒸馏组公平比较</text>
+<text x="1768.00" y="623.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">固定模型与训练配置</text>
+<text x="1768.00" y="666.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">记录实际监督 token 数</text>
+<text x="1768.00" y="734.12" fill="#AD6619" font-size="24" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">本轮尚未训练</text>
+<rect x="64" y="799" width="2070" height="74" rx="16" fill="#F5F8FC" stroke="none" stroke-width="2"/>
+<text x="88.00" y="845.64" fill="#52687A" font-size="28" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">对齐规则：预测某个目标 token 时，读取前一个 token 的查询；只看已有条件，不看未来。</text>
+<text x="66.00" y="944.28" fill="#15283C" font-size="31" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">02   训练后的独立推理</text>
+<rect x="64" y="1002" width="460" height="143" rx="22" fill="#F0F5FC" stroke="#D5DFEA" stroke-width="2"/>
+<text x="240.00" y="1062.68" fill="#15283C" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">新题目</text>
+<text x="144.00" y="1113.00" fill="#52687A" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">正式测试题，不含训练提示</text>
+<rect x="676" y="1002" width="680" height="143" rx="22" fill="#F0F5FC" stroke="#D5DFEA" stroke-width="2"/>
+<text x="863.75" y="1062.68" fill="#15283C" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">训练后的 1.5B 学生</text>
+<text x="878.50" y="1113.00" fill="#52687A" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">直接生成推导与最终答案</text>
+<rect x="1508" y="1002" width="626" height="143" rx="22" fill="#F0F5FC" stroke="#D5DFEA" stroke-width="2"/>
+<text x="1749.00" y="1062.68" fill="#15283C" font-size="36" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">独立评测</text>
+<text x="1630.50" y="1113.00" fill="#52687A" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">最终答案准确率 + 错误类型 + 成本</text>
+<polyline points="537,1073 658,1073" fill="none" stroke="#2465CA" stroke-width="4"/>
+<polygon points="658,1073 646.5914266954252,1079.2325320018547 646.5914266954252,1066.7674679981453" fill="#2465CA"/>
+<polyline points="1370,1073 1490,1073" fill="none" stroke="#2465CA" stroke-width="4"/>
+<polygon points="1490,1073 1478.591426695425,1079.2325320018547 1478.591426695425,1066.7674679981453" fill="#2465CA"/>
+<text x="66.00" y="1231.16" fill="#15283C" font-size="32" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">怎样证明“更好”？</text>
+<text x="66.00" y="1288.40" fill="#52687A" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">对照：未训练学生 / 仅答案硬蒸馏 / 软蒸馏 / 原始 CoT / 我们的方法</text>
+<text x="66.00" y="1336.52" fill="#52687A" font-size="29" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">attention 的额外贡献：再与仅难度选位、随机或位置匹配控制比较。</text>
+<polyline points="64,1373 2134,1373" fill="none" stroke="#D5DFEA" stroke-width="2"/>
+<text x="66.00" y="1422.00" fill="#52687A" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">当前：开发基线运行中。attention 相关性不等于因果；完整方法的收益尚待实验。  |  2026-10-22</text>
+</svg>

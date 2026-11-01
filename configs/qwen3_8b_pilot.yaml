@@ -1,0 +1,102 @@
+seed: 7
+seeds: [7]
+
+variants:
+  - answer_only
+  - single_rationale
+  - low_diversity_rationale
+  - multi_rationale
+  - diverse_multi_rationale
+  - compatible_rationale
+
+data:
+  dataset: openai/gsm8k
+  config: main
+  train_file: data/processed/gsm8k_train.jsonl
+  dev_file: data/processed/gsm8k_dev.jsonl
+  test_file: data/processed/gsm8k_test.jsonl
+  svamp_file: data/processed/svamp_test.jsonl
+  math500_file: data/processed/math500_test.jsonl
+  validation_size: 500
+  teacher_question_limit: 50
+  teacher_file: data/qwen3_8b/teacher/gsm8k_r1_candidates.jsonl
+  scored_teacher_file: data/qwen3_8b/teacher/gsm8k_r1_pilot50_scored.jsonl
+  variants_dir: data/qwen3_8b/pilot50_variants
+  rationale_candidates: 5
+  selected_rationales: 3
+
+teacher:
+  model: deepseek-ai/DeepSeek-R1
+  temperature: 0.6
+  top_p: 0.95
+  max_tokens: 768
+  thinking_budget: 4096
+  reasoning_effort: null
+  supervision_source: response_content
+  min_words: 8
+  max_words: 180
+  concurrency: 8
+  question_concurrency: 4
+  request_timeout_seconds: 120
+  max_retries: 2
+  input_price_cny_per_m_tokens: 4.0
+  output_price_cny_per_m_tokens: 16.0
+  # Old rationale-selection generation retired; budget moved to refinement.
+  max_total_estimated_cost_cny: 0.0
+
+student:
+  model: Qwen/Qwen3-8B-Base
+  max_length: 1024
+  trust_remote_code: false
+
+compatibility:
+  model: models/Qwen3-8B-Base-4bit
+
+training:
+  num_train_epochs: 3
+  per_device_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 0.0001
+  warmup_ratio: 0.05
+  weight_decay: 0.0
+  logging_steps: 20
+  save_steps: 250
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+
+mlx_training:
+  model: models/Qwen3-8B-Base-4bit
+  num_train_epochs: 3
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 0.0001
+  num_layers: 16
+  lora_r: 16
+  lora_scale: 2.0
+  lora_dropout: 0.05
+  max_length: 1024
+  logging_steps: 20
+  save_steps: 250
+
+artifacts:
+  mlx_data_dir: data/qwen3_8b/pilot50_mlx
+  mlx_output_dir: outputs_qwen3_8b_pilot50
+  mlx_report_dir: reports_qwen3_8b_pilot50
+  leakage_report: reports_qwen3_8b_pilot50/data/leakage_audit.json
+  teacher_summary: reports_qwen3_8b_pilot50/data/teacher_summary.json
+  token_audit: reports_qwen3_8b_pilot50/data/token_audit.json
+
+evaluation:
+  active_splits: [test, svamp]
+  deferred_splits: [math500]
+  max_new_tokens: 128
+  batch_size: 4
+  stochastic_samples: 0
+  behavioural_limit: 0
+  temperature: 0.7
+  bootstrap_samples: 5000
+  prompt_templates:
+    - "Solve the following problem step by step. End with `Final answer: <answer>`.\n\n{question}"
+    - "Reason carefully about this maths question, then write `Final answer: <answer>`.\n\n{question}"
+    - "Find the answer. Show your reasoning and finish with `Final answer: <answer>`.\n\n{question}"

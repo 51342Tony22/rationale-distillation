@@ -1,0 +1,18 @@
+{
+  "experiment_id": "selector_continuation_engineering6_v1_20261023",
+  "output_dir": "output/math_distill_v1/selector_masking_v1/continuation",
+  "selection": "the same six fixed engineering cases and all their 21 diagnostic candidates; never substitute failed material",
+  "seed": 7,
+  "replicates": 2,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "context_tokens": 4096,
+  "explanation_max_student_tokens": 64,
+  "teacher_edit_rule": "identical v4 conceptual explanation prompt without attention evidence for every position; no sampled student outcomes used to generate or select explanations",
+  "comparison": "same question and exact teacher prefix before the candidate, explanation versus no explanation; repeat seeds matched across the pair; no current/future reference step in student prompt",
+  "primary_score": "unchanged numeric final answer parser v1; frozen v2 sensitivity also reported",
+  "training_enabled": false,
+  "formal_test_evaluation_enabled": false,
+  "scope_limit": "two continuations per condition/position are an engineering smoke test, not an independent selector efficacy evaluation or power calculation"
+}

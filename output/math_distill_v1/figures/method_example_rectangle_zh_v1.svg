@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1580" viewBox="0 0 2200 1580">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="0" y="0" width="2200" height="226" rx="0" fill="#F4F7FB" stroke="none" stroke-width="2"/>
+<text x="64.00" y="68.40" fill="#2465CA" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">一个具体例子 · 从题面条件到数学方程</text>
+<text x="64.00" y="152.92" fill="#15283C" font-size="59" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">attention 帮助寻找“这一步该联系什么”</text>
+<text x="64.00" y="206.52" fill="#52687A" font-size="29" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">概念示意：假设困难发生在建立周长方程处；这不是已测得的定位结论。</text>
+<rect x="64" y="263" width="2070" height="124" rx="22" fill="#F0F5FC" stroke="#D5DFEA" stroke-width="2"/>
+<text x="92.00" y="309.76" fill="#2465CA" font-size="27" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">题目</text>
+<text x="92.00" y="364.80" fill="#15283C" font-size="35" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">矩形周长是 50 cm，长比宽多 5 cm。求矩形面积。</text>
+<rect x="64" y="431" width="793" height="607" rx="22" fill="white" stroke="#D5DFEA" stroke-width="2"/>
+<text x="96.00" y="497.04" fill="#15283C" font-size="33" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">A  正确解答中的推导步骤</text>
+<text x="96.00" y="568.28" fill="#52687A" font-size="31" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">设宽为 w，则长为 w + 5。</text>
+<polyline points="440,593 440,633" fill="none" stroke="#2465CA" stroke-width="4"/>
+<polygon points="440,633 433.7674679981454,621.5914266954252 446.2325320018546,621.5914266954252" fill="#2465CA"/>
+<rect x="94" y="659" width="733" height="158" rx="22" fill="#FFF2DF" stroke="#E9C28A" stroke-width="2"/>
+<text x="119.00" y="709.64" fill="#AD6619" font-size="28" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">若这一过渡的学生预测难度较高</text>
+<text x="277.50" y="785.84" fill="#AD6619" font-size="43" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">2w + 2(w + 5) = 50</text>
+<polyline points="440,834 440,872" fill="none" stroke="#2465CA" stroke-width="4"/>
+<polygon points="440,872 433.7674679981454,860.5914266954252 446.2325320018546,860.5914266954252" fill="#2465CA"/>
+<text x="96.00" y="936.28" fill="#52687A" font-size="31" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">再解出宽与长，最后计算面积。</text>
+<text x="96.00" y="1001.00" fill="#52687A" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">各题按自己的推导划分步骤，不固定成三步。</text>
+<rect x="946" y="431" width="1188" height="607" rx="22" fill="#F2FAF8" stroke="#CDE5DF" stroke-width="2"/>
+<text x="978.00" y="497.04" fill="#087F80" font-size="33" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">B  学生 attention 提供前提候选</text>
+<text x="978.00" y="561.40" fill="#52687A" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">在预测困难目标 token 的位置之前，</text>
+<text x="978.00" y="609.40" fill="#52687A" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">回看题干和已有推导；聚合到有意义的条件。</text>
+<rect x="978" y="666" width="530" height="119" rx="22" fill="white" stroke="#A6D4CA" stroke-width="2"/>
+<text x="1004.00" y="712.00" fill="#087F80" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">条件 A</text>
+<text x="1004.00" y="767.04" fill="#15283C" font-size="33" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">周长 = 50 cm</text>
+<rect x="1558" y="666" width="542" height="119" rx="22" fill="white" stroke="#A6D4CA" stroke-width="2"/>
+<text x="1585.00" y="712.00" fill="#087F80" font-size="25" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">条件 B</text>
+<text x="1585.00" y="767.04" fill="#15283C" font-size="33" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">长 = 宽 + 5 cm</text>
+<polyline points="858,742 927,742" fill="none" stroke="#087F80" stroke-width="4" stroke-dasharray="10 8"/>
+<polygon points="927,742 915.5914266954252,748.2325320018547 915.5914266954252,735.7674679981453" fill="#087F80"/>
+<text x="978.00" y="871.40" fill="#087F80" font-size="30" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">这两条条件，是构造周长方程的候选依据。</text>
+<text x="978.00" y="930.76" fill="#52687A" font-size="27" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">这里不使用虚构的 attention 热度值。实际最大权重可能落在问号或措辞上，因此还需要语义</text>
+<text x="978.00" y="973.76" fill="#52687A" font-size="27" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">核查与消融对照。</text>
+<polyline points="1530,1048 1530,1102" fill="none" stroke="#AD6619" stroke-width="4"/>
+<polygon points="1530,1102 1523.7674679981453,1090.591426695425 1536.2325320018547,1090.591426695425" fill="#AD6619"/>
+<rect x="64" y="1117" width="2070" height="255" rx="22" fill="#FFF5E7" stroke="#E9C28A" stroke-width="2"/>
+<text x="95.00" y="1181.92" fill="#AD6619" font-size="34" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">C  教师补充“前提 → 规则 → 当前步骤”</text>
+<text x="95.00" y="1244.16" fill="#15283C" font-size="32" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">“矩形有两条长与两条宽，周长把四条边相加。先用‘长 = 宽 + 5’替换长，</text>
+<text x="95.00" y="1295.16" fill="#15283C" font-size="32" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">再把两条宽和两条长都计入周长。”</text>
+<text x="95.00" y="1353.76" fill="#AD6619" font-size="27" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">将补充解释放在建立方程之前；核查数学与答案泄漏后，再用于改写 CoT 的蒸馏训练。</text>
+<text x="66.00" y="1449.28" fill="#15283C" font-size="31" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">学生难度决定“哪里值得看”；attention 提供“可能联系什么”；教师负责“把关系解释清楚”。</text>
+<polyline points="64,1490 2134,1490" fill="none" stroke="#D5DFEA" stroke-width="2"/>
+<text x="66.00" y="1540.88" fill="#52687A" font-size="26" font-family="Heiti SC, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="400">注意：这是待验证的方法设计。该例未展示实测注意力排名，也不声称定位到了真正的理解缺口。</text>
+</svg>

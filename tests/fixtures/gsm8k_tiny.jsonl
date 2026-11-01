@@ -1,0 +1,4 @@
+{"id":"gsm8k_train_00000","split":"train","question":"Lina has 3 bags with 4 apples in each bag. How many apples does she have?","gold_solution":"There are 3 * 4 = 12 apples.\n#### 12","gold_answer":"12"}
+{"id":"gsm8k_train_00001","split":"train","question":"A book costs $8 and a pen costs $3. What is the total cost?","gold_solution":"The total is 8 + 3 = 11.\n#### 11","gold_answer":"11"}
+{"id":"gsm8k_test_00000","split":"test","question":"There are 5 boxes with 2 balls each. How many balls are there?","gold_solution":"There are 5 * 2 = 10 balls.\n#### 10","gold_answer":"10"}
+

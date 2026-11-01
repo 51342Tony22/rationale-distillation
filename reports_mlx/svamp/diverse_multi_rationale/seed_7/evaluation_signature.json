@@ -1,0 +1,6 @@
+{
+  "model": "mlx-community/Qwen3-0.6B-Base-4bit",
+  "adapter_sha256": "11baf1ffc055005c0eb05331d6b49b42320b9eae6c2ca0fbd6de5fec648cbfe4",
+  "max_new_tokens": 256,
+  "behavioural": false
+}

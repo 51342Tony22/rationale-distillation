@@ -1,0 +1,77 @@
+# Engineering pilot on existing TRAIN-side R1 data, not the MATH main experiment.
+seed: 7
+seeds: [7, 17, 177]
+variants: [original_rationale, generic_expansion, random_expansion, hint_at_start, local_refinement, local_unfiltered]
+data:
+  train_file: data/processed/gsm8k_train.jsonl
+  dev_file: data/processed/gsm8k_dev.jsonl
+  test_file: data/processed/gsm8k_test.jsonl
+  svamp_file: data/processed/svamp_test.jsonl
+  math500_file: data/processed/math500_test.jsonl
+  teacher_file: data/qwen3_8b/teacher/gsm8k_r1_candidates.jsonl
+  variants_dir: data/refinement_pilot/variants
+refinement:
+  root: data/refinement_pilot
+  dataset: gsm8k
+  question_limit: 25
+  max_boundaries: 3
+  screening_samples: 4
+  verification_samples: 8
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.95
+  max_hint_tokens: 128
+  control_token_tolerance: 16
+  min_gain: 0.25
+  local_candidates: 2
+  # No paid requests are launched by the offline preparation/diagnosis commands.
+  # ¥42 combined allocation minus deduplicated recorded prior R1 usage (¥2.549316).
+  new_api_budget_cny: 39.45
+  budget_ledger: data/refinement_budget/teacher_ledger.jsonl
+  require_review: true
+student:
+  model: Qwen/Qwen3-8B-Base
+  max_length: 4096
+training:
+  warmup_ratio: 0.05
+  weight_decay: 0.0
+mlx_training:
+  model: models/Qwen3-8B-Base-4bit
+  num_train_epochs: 3
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 0.0001
+  num_layers: 16
+  lora_r: 16
+  lora_scale: 2.0
+  lora_dropout: 0.05
+  max_length: 4096
+  logging_steps: 20
+  save_steps: 250
+  reject_truncation: true
+  budget_mode: question_exposure_pilot
+artifacts:
+  mlx_data_dir: data/refinement_pilot/mlx
+  mlx_output_dir: outputs_refinement_pilot
+  mlx_report_dir: reports_refinement_pilot
+  token_audit: reports_refinement_pilot/token_audit.json
+  teacher_report_dir: reports_refinement_pilot/teacher
+evaluation:
+  active_splits: [dev]
+  deferred_splits: [test, svamp, math500]
+  grading: numeric
+  max_new_tokens: 2048
+  batch_size: 1
+  stochastic_samples: 3
+  behavioural_limit: 50
+  temperature: 0.7
+  bootstrap_samples: 10000
+  require_all_seeds: true
+  comparison_pairs:
+    - [local_refinement, original_rationale]
+    - [local_refinement, generic_expansion]
+    - [local_refinement, random_expansion]
+    - [local_refinement, hint_at_start]
+    - [local_refinement, local_unfiltered]
+  prompt_templates:
+    - "Solve the following problem step by step. End with `Final answer: <answer>`.\n\n{question}"

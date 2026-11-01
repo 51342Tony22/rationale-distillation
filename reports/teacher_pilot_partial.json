@@ -1,0 +1,10 @@
+{
+  "teacher_questions_stored": 60,
+  "candidate_records": 300,
+  "correct_candidates": 281,
+  "api_error_candidates": 18,
+  "questions_with_at_least_3_correct": 56,
+  "mean_completion_tokens_successful": 269.9255319148936,
+  "total_prompt_tokens": 34369,
+  "total_completion_tokens": 76119
+}

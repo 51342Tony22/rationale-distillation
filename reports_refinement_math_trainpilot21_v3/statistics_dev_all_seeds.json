@@ -1,0 +1,35 @@
+{
+  "comparisons": {
+    "local_refinement_minus_original_rationale": {
+      "difference": 0.014285714285714285,
+      "ci_low": -0.04285714285714286,
+      "ci_high": 0.07142857142857142,
+      "n": 70
+    },
+    "local_refinement_minus_generic_expansion": {
+      "difference": 0.014285714285714285,
+      "ci_low": -0.02857142857142857,
+      "ci_high": 0.07142857142857142,
+      "n": 70
+    },
+    "local_refinement_minus_random_expansion": {
+      "difference": -0.04285714285714286,
+      "ci_low": -0.11428571428571428,
+      "ci_high": 0.02857142857142857,
+      "n": 70
+    },
+    "local_refinement_minus_hint_at_start": {
+      "difference": 0.014285714285714285,
+      "ci_low": -0.02857142857142857,
+      "ci_high": 0.0574999999999948,
+      "n": 70
+    },
+    "local_refinement_minus_local_unfiltered": {
+      "difference": -0.05714285714285714,
+      "ci_low": -0.11428571428571428,
+      "ci_high": -0.014285714285714285,
+      "n": 70
+    }
+  },
+  "gap_closure": {}
+}

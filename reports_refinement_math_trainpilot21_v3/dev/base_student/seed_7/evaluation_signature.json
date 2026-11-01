@@ -1,0 +1,16 @@
+{
+  "model": "models/Qwen3-8B-Base-4bit",
+  "adapter_sha256": "base_student",
+  "max_new_tokens": 2048,
+  "batch_size": 1,
+  "split": "dev",
+  "grading_split": "math500",
+  "answer_protocol": "first_answer_v3",
+  "prompt_templates": [
+    "Solve the following problem step by step. End with `Final answer: <answer>`.\n\n{question}"
+  ],
+  "evaluation_ids_sha256": "6a42186cba2bb5395ede1ea64549f9b85b253c2826d3dd444abf6caa2d1e7cce",
+  "behavioural": false,
+  "protocol_source_sha256": "5175b880f9b6b2ecacac3543b56faed147711c84c3ad67eb8e037f7acae180b5",
+  "evaluation_rows_sha256": "71783413e1041fa26395b3a21f0e0024827941bb59f0b810cd308bdb9491d347"
+}

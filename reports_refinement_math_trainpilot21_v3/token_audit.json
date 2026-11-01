@@ -1,0 +1,75 @@
+{
+  "assistant_only_loss": true,
+  "no_truncation": true,
+  "budget_mode": "same question exposure; not token-matched",
+  "groups": {
+    "original_rationale": {
+      "questions": 17,
+      "unique_questions": 17,
+      "target_tokens_one_pass": 9194,
+      "full_tokens_max": 1251,
+      "changed_questions": 0,
+      "supervision_sha256": "35d290f2a32a751c0ade8be00be140e2821a7200b0311a2cd1613e4c2408d81b",
+      "microsteps": 168,
+      "optimizer_updates": 21,
+      "effective_epochs": 9.882352941176471
+    },
+    "generic_expansion": {
+      "questions": 17,
+      "unique_questions": 17,
+      "target_tokens_one_pass": 9290,
+      "full_tokens_max": 1251,
+      "changed_questions": 3,
+      "supervision_sha256": "d942c4383acc22f2a7781688c2d7a8643349d9579a0b3370be79c7857e3bba2b",
+      "microsteps": 168,
+      "optimizer_updates": 21,
+      "effective_epochs": 9.882352941176471
+    },
+    "random_expansion": {
+      "questions": 17,
+      "unique_questions": 17,
+      "target_tokens_one_pass": 9338,
+      "full_tokens_max": 1251,
+      "changed_questions": 3,
+      "supervision_sha256": "c5547683e0bbb7fb1cfd136e2e705695fa482e29c57795c7df4eaa335d77aa37",
+      "microsteps": 168,
+      "optimizer_updates": 21,
+      "effective_epochs": 9.882352941176471
+    },
+    "hint_at_start": {
+      "questions": 17,
+      "unique_questions": 17,
+      "target_tokens_one_pass": 9328,
+      "full_tokens_max": 1251,
+      "changed_questions": 3,
+      "supervision_sha256": "cb2bc56ab1bb3e43a9707152cc3ffb1c8f84b0d095c762b306bb8819b632f2d7",
+      "microsteps": 168,
+      "optimizer_updates": 21,
+      "effective_epochs": 9.882352941176471
+    },
+    "local_refinement": {
+      "questions": 17,
+      "unique_questions": 17,
+      "target_tokens_one_pass": 9328,
+      "full_tokens_max": 1251,
+      "changed_questions": 3,
+      "supervision_sha256": "243b1a494f60108b68827d10da3b7c5b3c5725db86d030021f94882288b8b06f",
+      "microsteps": 168,
+      "optimizer_updates": 21,
+      "effective_epochs": 9.882352941176471
+    },
+    "local_unfiltered": {
+      "questions": 17,
+      "unique_questions": 17,
+      "target_tokens_one_pass": 9926,
+      "full_tokens_max": 1317,
+      "changed_questions": 17,
+      "supervision_sha256": "e3db3cb737fce079293d365e36fe2988890d03566903d38fb446c4fc3485d752",
+      "microsteps": 168,
+      "optimizer_updates": 21,
+      "effective_epochs": 9.882352941176471
+    }
+  },
+  "mask_note": "MLX prompt mask excludes user tokens but its inclusive length can supervise one padding target",
+  "actual_cumulative_target_tokens": "reported by MLX training logs, not inferred from epochs"
+}

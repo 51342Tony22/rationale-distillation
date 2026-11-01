@@ -1,0 +1,73 @@
+{
+  "tokenizer": "/Users/starsfalling/Documents/FYP Mini Agent/models/Qwen3-8B-Base-4bit",
+  "max_length": 1024,
+  "variants": {
+    "answer_only": {
+      "rows": 15,
+      "unique_questions": 5,
+      "total_tokens": 1566,
+      "assistant_tokens": 186,
+      "mean_total_tokens": 104.4,
+      "mean_assistant_tokens": 12.4,
+      "median_assistant_tokens": 12,
+      "max_total_tokens": 135,
+      "rows_over_max_length": 0
+    },
+    "single_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "total_tokens": 3801,
+      "assistant_tokens": 2421,
+      "mean_total_tokens": 253.4,
+      "mean_assistant_tokens": 161.4,
+      "median_assistant_tokens": 147,
+      "max_total_tokens": 397,
+      "rows_over_max_length": 0
+    },
+    "low_diversity_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "total_tokens": 3261,
+      "assistant_tokens": 1881,
+      "mean_total_tokens": 217.4,
+      "mean_assistant_tokens": 125.4,
+      "median_assistant_tokens": 133,
+      "max_total_tokens": 301,
+      "rows_over_max_length": 0
+    },
+    "multi_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "total_tokens": 3432,
+      "assistant_tokens": 2052,
+      "mean_total_tokens": 228.8,
+      "mean_assistant_tokens": 136.8,
+      "median_assistant_tokens": 136,
+      "max_total_tokens": 397,
+      "rows_over_max_length": 0
+    },
+    "diverse_multi_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "total_tokens": 3444,
+      "assistant_tokens": 2064,
+      "mean_total_tokens": 229.6,
+      "mean_assistant_tokens": 137.6,
+      "median_assistant_tokens": 126,
+      "max_total_tokens": 397,
+      "rows_over_max_length": 0
+    },
+    "compatible_rationale": {
+      "rows": 15,
+      "unique_questions": 5,
+      "total_tokens": 3470,
+      "assistant_tokens": 2090,
+      "mean_total_tokens": 231.33333333333334,
+      "mean_assistant_tokens": 139.33333333333334,
+      "median_assistant_tokens": 136,
+      "max_total_tokens": 397,
+      "rows_over_max_length": 0
+    }
+  },
+  "assistant_token_budget_ratio_max_to_min": 13.016129032258064
+}

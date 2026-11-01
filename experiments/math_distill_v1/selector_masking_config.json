@@ -1,0 +1,18 @@
+{
+  "experiment_id": "selector_masking_diagnostic6_v1_20261023",
+  "output_dir": "output/math_distill_v1/selector_masking_v1",
+  "seed": 7,
+  "case_count": 6,
+  "selection": "first six rows of the frozen pilot100 ordinary_cot common-eligible training material, never dev/test and no replacements",
+  "candidate_rule": "complete equality-bearing mathematical lines/display blocks from the existing v2 extractor; conservatively omit the last mathematical candidate and any boxed-bearing candidate",
+  "attention_layers": 4,
+  "attention_queries": 8,
+  "random_controls": 3,
+  "masking": "delete content tokens of the top attention-density prior unit; length/kind-matched random deletion outside that unit",
+  "ranking": "uncalibrated equal-weight sum of within-question average percentile ranks of mean NLL and signed mask excess; tie by original step order; abstain if any candidate lacks controls",
+  "context_tokens": 4096,
+  "training_enabled": false,
+  "teacher_generation_enabled": false,
+  "continuation_validation_enabled": false,
+  "formal_test_evaluation_enabled": false
+}

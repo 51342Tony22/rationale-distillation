@@ -1,0 +1,14 @@
+{
+  "model": "models/Qwen3-8B-Base-4bit",
+  "adapter_sha256": "99f696ba9cb65261dd48277276cbc253aa796fec3e60450db0d89a560f61d815",
+  "max_new_tokens": 128,
+  "batch_size": 4,
+  "split": "dev",
+  "prompt_templates": [
+    "Solve the following problem step by step. End with `Final answer: <answer>`.\n\n{question}",
+    "Reason carefully about this maths question, then write `Final answer: <answer>`.\n\n{question}",
+    "Find the answer. Show your reasoning and finish with `Final answer: <answer>`.\n\n{question}"
+  ],
+  "evaluation_ids_sha256": "c171bbb1e27471e501dd4a43183109671faa0fde234a89ee724870d8573bd760",
+  "behavioural": false
+}

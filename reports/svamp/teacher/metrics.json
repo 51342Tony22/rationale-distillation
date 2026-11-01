@@ -1,0 +1,14 @@
+{
+  "variant": "teacher",
+  "teacher_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "split": "svamp",
+  "n": 100,
+  "evaluated_n": 97,
+  "coverage": 0.97,
+  "exact_match": 0.9690721649484536,
+  "end_to_end_exact_match": 0.94,
+  "invalid_answer_rate": 0.0,
+  "api_error_rate": 0.03,
+  "prompt_tokens": 6029,
+  "completion_tokens": 44805
+}

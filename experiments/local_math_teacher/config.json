@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "local_teacher_feasibility_only",
+  "teacher_repo": "mlx-community/Qwen2.5-Math-7B-Instruct-4bit",
+  "teacher_revision": "b144b9b952f8aa481cadb47e2eb6151d18a4de55",
+  "upstream_teacher": "Qwen/Qwen2.5-Math-7B-Instruct",
+  "student_reference_repo": "Qwen/Qwen2.5-Math-1.5B",
+  "model_dir": "models/Qwen2.5-Math-7B-Instruct-4bit",
+  "weight_bytes": 4284346187,
+  "weight_sha256": "1dce8dc90fe48e6848909373fc8071c6b6505ee716ac28236072dddaf322e9a6",
+  "weight_bits": 4,
+  "quantization_group_size": 64,
+  "context_tokens": 4096,
+  "max_new_tokens": 768,
+  "seed": 7,
+  "decoding": "greedy",
+  "system_prompt": "Please reason step by step, and put your final answer within \\boxed{}.",
+  "soft_probe_temperatures": [1.0, 2.0],
+  "cases": [
+    {"id": "handwritten_inventory", "question": "A shop has 18 apples. It sells 7 apples and then receives 5 more. How many apples does it have now?", "expected": "16"},
+    {"id": "handwritten_cost", "question": "Mina buys 6 notebooks for 7 dollars each and 2 pens for 4 dollars each. What is the total cost in dollars?", "expected": "50"},
+    {"id": "handwritten_fraction", "question": "A class has 30 students. Two fifths are girls and the others are boys. How many boys are in the class?", "expected": "18"},
+    {"id": "handwritten_equation", "question": "A taxi charges a fixed fee of 8 dollars plus 3 dollars per kilometre. The total fare is 35 dollars. How many kilometres was the journey?", "expected": "9"},
+    {"id": "handwritten_geometry", "question": "A rectangle has perimeter 50 cm. Its length is 5 cm greater than its width. What is its area in square centimetres?", "expected": "150"}
+  ]
+}

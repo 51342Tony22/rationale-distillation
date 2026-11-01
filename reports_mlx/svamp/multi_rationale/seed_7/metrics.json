@@ -1,0 +1,11 @@
+{
+  "variant": "multi_rationale",
+  "seed": 7,
+  "split": "svamp",
+  "backend": "mlx-lm",
+  "base_model": "mlx-community/Qwen3-0.6B-Base-4bit",
+  "n": 100,
+  "exact_match": 0.52,
+  "invalid_answer_rate": 0.0,
+  "mean_rationale_words": 27.33
+}
